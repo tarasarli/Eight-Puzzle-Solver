@@ -1,0 +1,89 @@
+Tara Sarli  tsarli@bu.edu
+
+
+
+
+
+
+puzzles with 5-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random				10 puzzles		*			146.1 states tested
+BFS				10 puzzles		*			47.1 states tested
+DFS (depth limit 20)		10 puzzles		*			19072.7 states tested
+DFS (depth limit 50)		10 puzzles		*			49043.0 states tested
+Greedy Search (using h1)         10 puzzles		*			70.3 states tested
+A* (using h1)			—————- no result because my A* is buggy :/   ——————
+
+
+
+* = my function is buggy so I am not sure what the avg. moves are 
+
+
+
+	I cannot comment on the average number of moves because my code is a bit buggy and is giving me 0.0 for average moves, which is not correct. I also cannot comment on A* algorithm because there is a bug in that as well. However, I saw that  BFS did the best. Random and Greedy also did pretty good. It was really interesting to see that as the depth limit increased (and depending on the bit combination given) the DFS took a lot of time trying to solve the puzzles. I did not time it but when I tested out the DFS with the depth limit of 50, I saw that it took probably about 10-30 seconds!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+puzzles with 10-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random				10 puzzles			*		3171.0 states tested
+BFS				10 puzzles			*		47.1 states tested
+DFS (depth limit 20)		10 puzzles			*		19072.7 states tested
+DFS (depth limit 50)		10 puzzles			*		49043.0 states tested
+Greedy Search (using h1) 		10 puzzles			*		70.3 states tested
+A* (using h1)			—————- no result because my A* is buggy :/   ——————
+
+
+The BFS solved the puzzles almost instantly. The random algorithm took a bit of time. The DFS with a depth limit of 20 took longer than the random algorithm. It took about 10 seconds to solve the first puzzle using DFS with a depth limit of 20! It took 10-20 seconds to solve each puzzle overall. It took so long! The Greedy algorithm solved the puzzles almost instantly!
+
+
+* = my function is buggy so I am not sure what the avg. moves are 
+
+
+
+puzzles with 15-move optimal solutions
+-------------------------------------
+algorithm                num. solved    avg. moves    avg. states tested
+------------------------------------------------------------------------
+random					5 				*		12581.6 states tested
+BFS					10				*		47.1 states tested
+DFS (depth limit 20)			10				*		19072.7 states tested
+DFS (depth limit 50)			6				*		28779.833333333332 states tested
+Greedy Search (using h1) 			10				*		70.3 states tested
+A* (using h1)				—————- no result because my A* is buggy :/   ——————
+
+
+
+
+The random algorithm wasn’t able to solve all of the puzzles. It took it so long to solve the ones it did end up being able to solve. The BFS was very fast in solving the puzzles! The DFS with a depth limit of 20 was definitely a lot slower than the BFS but was quicker than random. It took the DFS with a depth limit of 50 about 10 seconds to solve the first problem. It took this algorithm about 5-30 seconds to solve each puzzles that it could solve. However, there were four puzzles that it took more than 5 minutes to solve.. I had to press control c for these ones. The Greedy algorithm solved the puzzles instantly!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
